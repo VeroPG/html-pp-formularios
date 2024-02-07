@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/styles_viejuners.css" />
+
+    <title>Robatimbres</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario de robo de Bichicletas</h1>
+    </header>
+
+    <form id="contactForm" action="">
+      <fieldset>
+        <label for="day">Día del robo:</label>
+        <input type="date" id="day" name="day" />
+        <br />
+
+        <label for="hour">Hora del robo:</label>
+        <input type="time" id="hour" name="hour" /><br />
+
+        <label for="head">Color de la bicicleta:</label>
+        <input type="color" id="color" name="color" value="#e66465" />
+        <br />
+
+        <label for="price:">Precio estimado</label>
+        <input type="range" id="price" name="price" min="100" max="6000" />
+        <br />
+
+        <label for="typeOfBike">Tipo de bicicleta:</label>
+        <select name="typeOfBike" id="typeOfBike">
+          <option value="">Elije tipo de bicicleta:</option>
+          <hr />
+          <optgroup label="Paseo">
+            <option value="senorial">Señorial</option>
+            <option value="anti_plebeyos">Anti-plebeyos</option>
+            <option value="hombro">PorEncimaDelHombros</option>
+          </optgroup>
+          <hr />
+          <optgroup label="Montaña">
+            <option value="gamusinos">Gamusinos</option>
+            <option value="hueleflores">Hueleflores premium</option>
+            <option value="fango">Fango lover</option>
+          </optgroup>
+          <hr />
+          <optgroup label="Carreras">
+            <option value="metroymedio">Metroymedio</option>
+            <option value="fluor">3 de la tarde. Fluorescente edition</option>
+            <option value="grupitors">Grupitors</option>
+          </optgroup>
+        </select>
+        <br /><br />
+
+        <label for="acc">Accesorios:</label>
+        <select id="acc" name="acc" multiple>
+          <option value="ruedines">Ruedines</option>
+          <option value="pegatinas">Pegatinas</option>
+          <option value="cestita">Cestita</option>
+          <option value="bomba_aire">Bomba de aire</option>
+          <option value="timbre">Timbre</option>
+          <option value="foco">Foco</option>
+        </select>
+        <br /><br />
+
+        <label for="fab">Marca: </label>
+        <input list="marca" id="fab" name="fab" />
+        <datalist id="marca">
+          <option value="Specialized"></option>
+          <option value="Trek"></option>
+          <option value="Merida"></option>
+          <option value="Giant"></option>
+          <option value="Cube"></option>
+          <option value="Lapierre"></option>
+          <option value="Orbea"></option>
+          <option value="Cannondale"></option>
+          <option value="Bmc"></option>
+          <option value="Canyon"></option>
+          <option value="Look"></option>
+          <option value="Protek"></option>
+          <option value="Megamo"></option>
+          <option value="Pinarello"></option>
+          <option value="Bianchi"></option>
+          <option value="BH"></option>
+          <option value="Factor"></option>
+          <option value="Ghost"></option>
+          <option value="Cervélo"></option>
+          <option value="Argon"></option>
+        </datalist>
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+
+    <a value="Atras" href="../index.html">Atras</a>
+  </body>
+</html>
